@@ -1,0 +1,24 @@
+.showcase {
+    background-color: var(--color-gray-3)
+}
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .showcase .showcase-body h1 {
+        font-size: var(--font-size-60);
+        font-family: var(--font-play);
+    }
+        .showcase .showcase-body h1 strong {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+        }
+        .showcase .showcase-body a {
+            display: inline-block;
+        }
+
+
+
+        
