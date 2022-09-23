@@ -81,6 +81,10 @@ html, body {
 .outofstock {
     color: var(--color-product-outofstock);
 }
+
+.required {
+    color: var(--color-theme);
+}
     
 .section-title {
     color: var(--color-theme-dark);
@@ -98,6 +102,62 @@ html, body {
     .section-title p {
         margin: 1rem 0;
     }
+
+
+    
+    .form-theme .card {
+        padding: 1.5rem;
+        border: none;
+        border-radius: var(--border-radius-small);
+        background-color: var(--color-gray-4);
+    
+    }
+        .form-theme .card .card-body h1 {
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-theme-dark);
+            font-size: 1.5rem;
+        }
+    
+        .form-theme .card .card-body .card-text {
+            margin: 1.5rem 0;
+            line-height: 2;
+        }
+            .form-theme .card .card-body .card-text a {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                text-decoration: none;
+            }
+            .form-theme .card .card-body .card-text a:hover {
+                color: var(--color-theme-dark);
+                text-decoration: underline;
+            }
+    
+            .form-theme .card .card-body .card-text.text-small {
+                color: var(--color-gray-5);
+                font-size: 0.875rem;
+            }
+
+    .form-theme form input[type=checkbox] {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+    
+    .form-theme form input[type=text],
+    .form-theme form input[type=email],
+    .form-theme form input[type=password] {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: var(--border-radius-small);
+        padding: 0.6rem 1rem;
+        margin: 0.2rem 0;
+    }
+        .form-theme form input:focus {
+            outline: 0;
+            box-shadow: 0 0 3px 0 var(--color-gray-0);
+        }
 
 
 /* top-menu */
@@ -692,40 +752,16 @@ html, body {
             text-decoration: underline;
         }
 
-
-.signup-signin {
-    padding: 6rem 0;
-}
-    .signup-signin .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-        align-items: start;
+    .signup-signin {
+        padding: 6rem 0;
     }
-
-    .signup-signin .card {
-        padding: 1.5rem;
-        border: none;
-        border-radius: var(--border-radius-small);
-        background-color: var(--color-gray-4);
-
-    }
-        .signup-signin .card .card-body h1 {
-            font-family: var(--font-roboto);
-            font-weight: var(--font-weight-medium);
-            color: var(--color-theme-dark);
-            font-size: 1.5rem;
+        .signup-signin .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            align-items: start;
         }
 
-        .signup-signin .card .card-body .card-text {
-            margin: 1.5rem 0;
-            line-height: 2;
-        }
-
-        .signup-signin .card .card-body .card-text.text-small {
-            color: var(--color-gray-5);
-            font-size: 0.875rem;
-        }
 
 
 
