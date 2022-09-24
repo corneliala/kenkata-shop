@@ -103,7 +103,14 @@ html, body {
         margin: 1rem 0;
     }
 
-
+a {
+    color: var(--color-theme);
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+}
+    a:hover {
+        color: var(--color-theme-dark);
+    }
     
     .form-theme .card {
         padding: 1.5rem;
@@ -123,16 +130,12 @@ html, body {
             margin: 1.5rem 0;
             line-height: 2;
         }
-            .form-theme .card .card-body .card-text a {
-                color: var(--color-theme);
-                font-weight: var(--font-weight-medium);
-                text-decoration: none;
-            }
-            .form-theme .card .card-body .card-text a:hover {
-                color: var(--color-theme-dark);
-                text-decoration: underline;
-            }
-    
+
+        .form-theme .card .card-body .card-text a {
+            font-weight: var(--font-weight-medium);
+        }
+
+
             .form-theme .card .card-body .card-text.text-small {
                 color: var(--color-gray-5);
                 font-size: 0.875rem;
@@ -256,9 +259,45 @@ html, body {
 .main-menu .brand {
     flex: 2;
 }
-.main-menu .search {
-    flex: 4;
-}
+
+    .main-menu .search {
+        flex: 4;
+        width: 522px;
+    }
+    .main-menu .search #searchboxForm {
+        position: relative;
+        border-radius: var(--border-radius-medium);
+        height: 45px;
+        margin: auto;
+    }
+        .main-menu .search #searchboxForm input {
+            position: absolute;
+            border-radius: var(--border-radius-medium);
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: 1px solid var(--color-gray-2);
+            font-size: 0.9rem;
+            padding-left: 1.3rem;
+        }
+        .main-menu .search #searchboxForm button {
+            position: absolute;
+            top: 0;
+            right:-2px;
+            width: 50px;
+            height: 100%;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+            transition: 0.3s ease-in-out;
+        }
+        .main-menu .search #searchboxForm button:hover {
+            background-color: var(--color-theme-dark);
+        }
+
+
+
 .main-menu .menu-links {
     flex: 3;
     display: flex;
@@ -762,6 +801,56 @@ html, body {
             align-items: start;
         }
 
+.external-logins {
+    position: relative;
+    display: flex;
+    justify-content: center;
+     z-index: 0;
+}
+    .external-logins .label {
+        background: var(--color-gray-4);
+        padding: 0 1rem;
+    }
+        .external-logins .line {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            border: 1px solid var(--color-gray-0);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+.external-socialmedia-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+    .external-socialmedia-buttons .facebook-button {
+        text-align: left;
+    }
+    .external-socialmedia-buttons .facebook-button button {
+        background-image: url(../images/buttons/facebook-login-button.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+    }
+    .external-socialmedia-buttons .google-button {
+        text-align: right;
+    }
+    .external-socialmedia-buttons .google-button button {
+        background-image: url(../images/buttons/google-login-button.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+
+    }
+    .external-socialmedia-buttons .google-button button:hover,
+    .external-socialmedia-buttons .facebook-button button:hover {
+        filter: brightness(90%);
+    }
 
 
 
