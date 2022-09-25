@@ -68,6 +68,20 @@ html, body {
         color: var(--color-white);
     }
 
+.btn-dark {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-dark:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-theme);
+    }
+
+
 .bg-theme {
     background-color: var(--color-theme);
 }
@@ -851,6 +865,119 @@ a {
     .external-socialmedia-buttons .facebook-button button:hover {
         filter: brightness(90%);
     }
+
+.discount {
+    background: var(--color-gray-1);
+    margin-top: 8rem;
+}
+    .discount .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .discount .container .discount-body {
+            background: var(--color-theme);
+            height: 418px;
+            width: 255px;
+        }
+
+            .discount .container .discount-body h1 {
+                color: var(--color-white);
+                font-size: 3rem;
+                text-align: center;
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                padding-top: 7rem;
+            }
+            .discount .container .discount-body span {
+                font-size: 1.5rem;
+            }
+            .discount .container .discount-body p {
+                color: var(--color-white);
+                margin: 1rem 0;
+                text-align: center;
+            }
+            .discount .container .discount-body .btn {
+                margin-left: 3rem;
+            }
+
+.discount .discount-info {
+    color: var(--color-white)  
+}
+    .discount .container .discount-info p {
+        width: 445px;
+    }
+
+
+
+.flashsale {
+    background: var(--color-theme-dark);
+    margin-top: 8rem;
+}
+    .flashsale .container {
+        display: flex;
+        justify-content: space-between;
+        height: 418px;
+    }
+        .flashsale .container .flashsale-body {
+            background: var(--color-theme);
+            height: 255px;
+            width: 255px;
+        }
+    
+            .flashsale .container .flashsale-body h1 {
+                color: var(--color-white);
+                font-size: 3rem;
+                text-align: center;
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                padding-top: 3rem;
+            }
+            .flashsale .container .flashsale-body p {
+                color: var(--color-white);
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                text-align: center;
+            }
+    
+.flashsale .flashsale-timer {
+    color: var(--color-white); 
+    padding: 6rem;
+
+}
+
+        .flashsale .flashsale-timer h1 {
+            color: var(--color-theme);
+            font-family: var(--font-play);
+            font-size: 2.5rem;
+            font-weight: var(--font-weight-bold);
+            padding-top: 0.8rem;
+            display:inline-block;
+            text-align: center;
+        }
+        .flashsale .flashsale-timer span {
+            font-size: 16px;
+            font-weight: var(--font-weight-regular);
+            color: var(--color-dark);
+            display: block;     
+        }
+
+
+      .dot {
+        height: 100px;
+        width: 100px;
+        background-color: var(--color-white);
+        border-radius: 50%;
+        display: inline-block;
+        border: dotted;
+        border-color: var(--color-theme);
+        margin: 1rem;
+    }
+    .flashsale .button {
+        margin-left: 190px;
+      }
+
+
 
 
 
