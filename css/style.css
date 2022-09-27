@@ -754,6 +754,8 @@ a {
                     color: var(--color-theme);
                 }
 
+/* LOG-IN PAGE */
+
 .site-title {
     background-color: var(--color-theme-account);
     color:#FFFFFF;
@@ -865,6 +867,9 @@ a {
     .external-socialmedia-buttons .facebook-button button:hover {
         filter: brightness(90%);
     }
+
+
+/* discount banner */
 
 .discount {
     background: var(--color-gray-1);
@@ -978,6 +983,129 @@ a {
       }
 
 
+/* top sellers */
+.top-sellers .grid {
+    display:grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(2, 455px);
+    grid-template-rows: repeat(2, 325px); 
+    grid-template-areas: "box1 box2"
+                         "box1 box3"
+}
+
+.top-sellers .topseller-box {
+    position: relative;
+    background-color: var(--color-gray-1);
+    border-radius: var(--border-radius-small);
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-left: 40%;
+    
+}
+    .top-sellers .topseller-box .topseller-box-title {
+        position: absolute;
+        left:0;
+        bottom:0;
+        width: 100%;
+        border-radius: 0 var(--border-radius-small) 0 0;
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+        padding: 0.5rem 1rem;
+        height: 38px;
+        transition: 0.2s ease-in-out;
+    }
+    .top-sellers .topseller-box:hover .topseller-box-title {
+        height: 75px;
+    }
+        .top-sellers .topseller-box .topseller-box-title span {
+            display: block;
+            color: var(--color-white);
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+
+        }
+
+
+
+#topseller-box-1 {
+    grid-area: box1;
+}
+#topseller-box-2 {
+    grid-area: box2;
+}
+#topseller-box-3 {
+    grid-area: box3;
+}
+
+
+.subscribe-now {
+    background-color: var(--color-gray-4);
+    padding: 0 400px 0 400px;
+    margin-top: 5rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}    
+    .subscribe-now .gray-box {
+        background-color: var(--color-gray-1);
+        width: 500px;
+        height: 400px;
+    }
+
+.subscribe-title {
+    color: var(--color-theme-dark);
+}
+    .subscribe-title h1 {
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+    }
+        .subscribe-title h1 span {
+            color: var(--color-theme);
+        }
+    .subscribe-title p {
+        margin: 1rem 0;
+        width: 400px;
+    }
+
+.subscribe-now .subscribe {
+    width: 445px;
+}
+.subscribe-now .subscribe #subscribeForm {
+    position: relative;
+    border-radius: var(--border-radius-medium);
+    height: 45px;
+    margin: auto;
+}
+    .subscribe-now .subscribe #subscribeForm input {
+        position: absolute;
+        border-radius: var(--border-radius-medium);
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: 1px solid var(--color-gray-2);
+        font-size: 0.9rem;
+        padding-left: 1.3rem;
+    }
+    .subscribe-now .subscribe #subscribeForm button {
+        position: absolute;
+        top: 0;
+        right:-2px;
+        height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        border: none;
+        border-radius:  var(--border-radius-medium) ;
+        transition: 0.3s ease-in-out;
+    }
+    .subscribe-now .subscribe #subscribeForm button:hover {
+        background-color: var(--color-theme-dark);
+    }
 
 
 
