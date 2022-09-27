@@ -1108,6 +1108,16 @@ a {
     }
 
 
+.bottom-border {
+    background-color: var(--color-theme-dark);
+    padding: 0.2rem;
+}
+    .bottom-border p {
+        color: var(--color-white);
+        font-size: 14px;
+        margin-left: 20%;
+        padding-top: 1rem;
+    }
 
 
 @media (min-width: 578px) {
